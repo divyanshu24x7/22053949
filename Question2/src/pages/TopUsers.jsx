@@ -7,7 +7,7 @@ const TopUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:3000/top-users"); // Adjust the endpoint as needed
+        const response = await fetch("http://localhost:5000/top-users"); // Adjust the endpoint as needed
         const data = await response.json();
         setUsers(data);
       } catch (error) {

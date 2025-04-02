@@ -7,7 +7,7 @@ const TrendingPosts = () => {
   useEffect(() => {
     const fetchTrendingPosts = async () => {
       try {
-        const response = await fetch("http://localhost:3000/posts?type=popular"); // Adjust endpoint as needed
+        const response = await fetch("http://localhost:5000/posts?type=popular"); // Adjust endpoint as needed
         const data = await response.json();
         setTrendingPosts(data);
       } catch (error) {

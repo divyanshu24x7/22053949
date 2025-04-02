@@ -6,7 +6,7 @@ export default function Feed() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:3000/posts?type=popular")
+        fetch("http://localhost:5000/posts?type=popular")
             .then((res) => {
                 if (!res.ok) {
                     throw new Error("Failed to fetch posts");
